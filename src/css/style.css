@@ -278,4 +278,85 @@ textarea:focus {
   background-repeat: no-repeat;
   padding: 100px 0;
 }
+
+/* ======= Intro Section ======= */
+#testimonial-section {
+  padding: 50px 0;
+}
+
+#testimonial-section .section-title .heading {
+  color: #364a6b;
+}
+
+#testimonial-section .testimonial-box {
+  -webkit-box-shadow: 0px 9px 39px #0000000f;
+          box-shadow: 0px 9px 39px #0000000f;
+  background-color: #ffffff;
+  border-radius: 24px;
+  padding: 0 50px 50px 50px;
+}
+
+#testimonial-section .testimonial-box .client-img {
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#testimonial-section .testimonial-box .client-img span {
+  position: relative;
+}
+
+#testimonial-section .testimonial-box .client-img span::after {
+  position: absolute;
+  content: '';
+  width: 80%;
+  margin: auto;
+  height: 100%;
+  bottom: -35px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: transparent linear-gradient(116deg, #a37fdb 0%, #2eb2ed 100%) 0% 0% no-repeat padding-box;
+  filter: blur(10px);
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  border-radius: 2px;
+  z-index: -1;
+  -webkit-filter: blur(10px);
+}
+
+#testimonial-section .testimonial-box p {
+  color: #364a6b;
+}
+
+#testimonial-section .testimonial-box .client-info .name {
+  font-family: "poligon-bold";
+  color: #a37fdb;
+}
+
+#testimonial-section .testimonial-box .client-info .profession-and-city {
+  color: #8e99ac;
+}
+
+#testimonial-section .swiper-navigation button {
+  background: #f0e6ff 0% 0% no-repeat padding-box;
+  padding: 5px 15px;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+#testimonial-section .swiper-navigation button:first-child {
+  border-radius: 27px 0px 0px 27px;
+}
+
+#testimonial-section .swiper-navigation button:last-child {
+  border-radius: 0px 27px 27px 0px;
+}
+
+#testimonial-section .swiper-navigation button i {
+  color: #a37fdb;
+}
+
+#testimonial-section .swiper-navigation button.swiper-button-disabled {
+  opacity: 0.6;
+}
 /*# sourceMappingURL=style.css.map */
