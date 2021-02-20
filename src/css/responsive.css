@@ -1,1 +1,7 @@
-/* No CSS *//*# sourceMappingURL=responsive.css.map */
+@media only screen and (max-width: 575px) {
+  .heading,
+  .big-heading {
+    font-size: 30px;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
