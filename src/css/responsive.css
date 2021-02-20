@@ -1,3 +1,46 @@
+@media only screen and (max-width: 991px) {
+  #services-section nav .nav-tabs {
+    padding: 15px 0 !important;
+    text-align: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  #services-section nav .nav-tabs::-webkit-scrollbar {
+    height: 07px;
+  }
+  #services-section nav .nav-tabs::-webkit-scrollbar-track {
+    background: #e9e9e9;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  #services-section nav .nav-tabs::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 10px;
+  }
+  #services-section nav .nav-tabs button {
+    background: #ffffff;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 0 !important;
+    margin: 0 30px;
+    font-family: 'poligon-regular';
+  }
+  #services-section nav .nav-tabs button.active {
+    background: #ffffff;
+    font-family: 'poligon-bold';
+    color: #21243d;
+  }
+  #services-section nav .nav-tabs button.active::after {
+    width: 0;
+  }
+  #services-section nav .nav-tabs button.active img {
+    -webkit-filter: invert(0%) sepia(6%) saturate(7475%) hue-rotate(285deg) brightness(103%) contrast(106%);
+            filter: invert(0%) sepia(6%) saturate(7475%) hue-rotate(285deg) brightness(103%) contrast(106%);
+  }
+}
+
 @media only screen and (max-width: 575px) {
   .after-heading {
     font-size: 18px;

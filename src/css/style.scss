@@ -230,6 +230,12 @@ textarea:focus {
         text-align: left !important;
         font-family: $p-bold;
         transition: 0s !important;
+        &:first-child {
+          margin-left: 0;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
         &.active {
           background: transparent
             linear-gradient(249deg, #a37fdb 0%, #2eb2ed 100%) 0% 0% no-repeat

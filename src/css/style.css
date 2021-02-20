@@ -236,6 +236,14 @@ textarea:focus {
   transition: 0s !important;
 }
 
+#services-section nav .nav-tabs button:first-child {
+  margin-left: 0;
+}
+
+#services-section nav .nav-tabs button:last-child {
+  margin-right: 0;
+}
+
 #services-section nav .nav-tabs button.active {
   background: transparent linear-gradient(249deg, #a37fdb 0%, #2eb2ed 100%) 0% 0% no-repeat padding-box;
   color: #ffffff;
