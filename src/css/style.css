@@ -7,6 +7,11 @@ a {
   text-decoration: none;
 }
 
+.button:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
 button:focus,
 textarea:focus {
   outline: none !important;
@@ -263,5 +268,14 @@ textarea:focus {
   -o-border-radius: 23px;
   z-index: -1;
   -webkit-filter: blur(10px);
+}
+
+/* ======= Intro Section ======= */
+#intro-section {
+  background-image: url("../img/intro-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 0;
 }
 /*# sourceMappingURL=style.css.map */
