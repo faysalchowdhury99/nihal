@@ -38,13 +38,25 @@ textarea:focus {
 }
 
 /* ======= Reuseable ======= */
+.big-heading {
+  font-size: 50px;
+  font-family: "poligon-bold";
+  color: #21243d;
+}
+
 .heading {
   font-size: 40px;
   font-family: "poligon-bold";
+  color: #21243d;
 }
 
 .para-text {
   font-size: 18px;
+  color: #21243d;
+}
+
+.section-padding {
+  padding: 100px 0;
 }
 
 .button {
@@ -195,5 +207,11 @@ textarea:focus {
 
 #header-section .navbar .navbar-button a:last-child {
   margin-right: 0;
+}
+
+/* ======= Hero && Partner Section ======= */
+#hero-section,
+#partner-section {
+  padding: 50px 0;
 }
 /*# sourceMappingURL=style.css.map */

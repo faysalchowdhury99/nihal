@@ -47,12 +47,22 @@ textarea:focus {
   font-family: $p-bold;
 }
 /* ======= Reuseable ======= */
+.big-heading {
+  font-size: $big-heading;
+  font-family: $p-bold;
+  color: #21243d;
+}
 .heading {
   font-size: $heading;
   font-family: $p-bold;
+  color: #21243d;
 }
 .para-text {
   font-size: $para-size;
+  color: #21243d;
+}
+.section-padding {
+  padding: $section-padding;
 }
 .button {
   font-size: $button-size;
@@ -196,4 +206,10 @@ textarea:focus {
       }
     }
   }
+}
+
+/* ======= Hero && Partner Section ======= */
+#hero-section,
+#partner-section {
+  padding: 50px 0;
 }
