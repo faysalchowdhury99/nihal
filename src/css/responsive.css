@@ -1,4 +1,5 @@
 @media only screen and (max-width: 991px) {
+  /* =========  Services Section ========= */
   #services-section nav .nav-tabs {
     padding: 15px 0 !important;
     text-align: center;
@@ -39,6 +40,7 @@
     -webkit-filter: invert(0%) sepia(6%) saturate(7475%) hue-rotate(285deg) brightness(103%) contrast(106%);
             filter: invert(0%) sepia(6%) saturate(7475%) hue-rotate(285deg) brightness(103%) contrast(106%);
   }
+  /* =========  Testimonial Section ========= */
   #testimonial-section .swiper-slide {
     background-color: #ffffff;
   }
@@ -48,13 +50,52 @@
   }
 }
 
+@media only screen and (max-width: 767px) {
+  /* ======= Newsletter Section ======= */
+  #newsletter-section .bg {
+    padding: 20px;
+    border-radius: 20px;
+    background-position: left;
+  }
+  #newsletter-section .right-side form {
+    background-color: transparent !important;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    overflow: visible;
+  }
+  #newsletter-section .right-side form input {
+    background-color: #ffffff;
+    padding: 10px 30px !important;
+    width: 100%;
+    border-radius: 23px;
+  }
+  #newsletter-section .right-side form button {
+    width: 100%;
+    margin-top: 10px;
+    background: #f9f9f9;
+    color: #21243d;
+  }
+}
+
 @media only screen and (max-width: 575px) {
+  /* =========  Reuseable ========= */
+  .container {
+    padding: 0 30px !important;
+  }
   .after-heading {
     font-size: 18px;
   }
   .heading,
   .big-heading {
     font-size: 30px;
+  }
+  /* =========  Partner Section ========= */
+  #partner-section {
+    padding: 20px 0;
+  }
+  /* =========  Testimonial Section ========= */
+  #testimonial-section {
+    padding-top: 50px;
   }
 }
 /*# sourceMappingURL=responsive.css.map */

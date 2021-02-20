@@ -1,5 +1,5 @@
 @media only screen and (max-width: 991px) {
-  // Services Section
+  /* =========  Services Section ========= */
   #services-section {
     nav {
       .nav-tabs {
@@ -42,7 +42,7 @@
       }
     }
   }
-  //   Testimonial Section
+  /* =========  Testimonial Section ========= */
   #testimonial-section {
     .swiper-slide {
       background-color: #ffffff;
@@ -54,12 +54,54 @@
   }
 }
 
+@media only screen and (max-width: 767px) {
+  /* ======= Newsletter Section ======= */
+  #newsletter-section {
+    .bg {
+      padding: 20px;
+      border-radius: 20px;
+      background-position: left;
+    }
+    .right-side {
+      form {
+        background-color: transparent !important;
+        box-shadow: none;
+        overflow: visible;
+        input {
+          background-color: #ffffff;
+          padding: 10px 30px !important;
+          width: 100%;
+          border-radius: 23px;
+        }
+        button {
+          width: 100%;
+          margin-top: 10px;
+          background: #f9f9f9;
+          color: #21243d;
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 575px) {
+  /* =========  Reuseable ========= */
+  .container {
+    padding: 0 30px !important;
+  }
   .after-heading {
     font-size: 18px;
   }
   .heading,
   .big-heading {
     font-size: 30px;
+  }
+  /* =========  Partner Section ========= */
+  #partner-section {
+    padding: 20px 0;
+  }
+  /* =========  Testimonial Section ========= */
+  #testimonial-section {
+    padding-top: 50px;
   }
 }
