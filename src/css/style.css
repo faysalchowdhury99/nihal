@@ -44,10 +44,20 @@ textarea:focus {
   color: #21243d;
 }
 
+.after-heading {
+  color: #a37fdb;
+  font-family: "poligon-bold";
+  font-size: 25px;
+}
+
 .heading {
   font-size: 40px;
   font-family: "poligon-bold";
   color: #21243d;
+}
+
+.heading-regular {
+  font-family: "poligon-regular";
 }
 
 .para-text {
@@ -56,7 +66,7 @@ textarea:focus {
 }
 
 .section-padding {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 .button {
@@ -194,11 +204,8 @@ textarea:focus {
 
 #header-section .navbar .navbar-nav .nav-item .nav-link.active::after {
   width: 12px;
-  transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 #header-section .navbar .navbar-button a {
@@ -209,9 +216,52 @@ textarea:focus {
   margin-right: 0;
 }
 
-/* ======= Hero && Partner Section ======= */
-#hero-section,
-#partner-section {
-  padding: 50px 0;
+/* ======= Services Section ======= */
+#services-section nav .nav-tabs button {
+  color: #21243d;
+  -webkit-box-shadow: 0px 10px 16px #0000000d;
+          box-shadow: 0px 10px 16px #0000000d;
+  border-radius: 14px;
+  background-color: #ffffff;
+  margin: 0 15px;
+  padding: 10px 15px !important;
+  text-align: left !important;
+  font-family: "poligon-bold";
+  -webkit-transition: 0s !important;
+  transition: 0s !important;
+}
+
+#services-section nav .nav-tabs button.active {
+  background: transparent linear-gradient(249deg, #a37fdb 0%, #2eb2ed 100%) 0% 0% no-repeat padding-box;
+  color: #ffffff;
+  position: relative;
+}
+
+#services-section nav .nav-tabs button.active img {
+  filter: brightness(0) invert(1);
+  -webkit-filter: brightness(0) invert(1);
+}
+
+#services-section nav .nav-tabs button.active::after {
+  position: absolute;
+  content: '';
+  width: 80%;
+  margin: auto;
+  height: 15px;
+  bottom: -2px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: transparent linear-gradient(116deg, #a37fdb 0%, #2eb2ed 100%) 0% 0% no-repeat padding-box;
+  filter: blur(10px);
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  border-radius: 23px;
+  -webkit-border-radius: 23px;
+  -moz-border-radius: 23px;
+  -ms-border-radius: 23px;
+  -o-border-radius: 23px;
+  z-index: -1;
+  -webkit-filter: blur(10px);
 }
 /*# sourceMappingURL=style.css.map */

@@ -5,6 +5,7 @@ $p-regular: 'poligon-regular';
 
 // Text Size
 $big-heading: 50px;
+$after-heading-size: 25px;
 $heading: 40px;
 $para-size: 18px;
 $big-para-size: 22px;
@@ -12,7 +13,7 @@ $button-size: 18px;
 $logo-size: 30px;
 
 // Padding
-$section-padding: 100px 0;
+$section-padding: 50px 0;
 
 /* ======= Basic ======= */
 body {
@@ -52,10 +53,18 @@ textarea:focus {
   font-family: $p-bold;
   color: #21243d;
 }
+.after-heading {
+  color: #a37fdb;
+  font-family: $p-bold;
+  font-size: $after-heading-size;
+}
 .heading {
   font-size: $heading;
   font-family: $p-bold;
   color: #21243d;
+}
+.heading-regular {
+  font-family: $p-regular;
 }
 .para-text {
   font-size: $para-size;
@@ -188,10 +197,6 @@ textarea:focus {
             &::after {
               width: 12px;
               transition: all 0.3s ease-in-out;
-              -webkit-transition: all 0.3s ease-in-out;
-              -moz-transition: all 0.3s ease-in-out;
-              -ms-transition: all 0.3s ease-in-out;
-              -o-transition: all 0.3s ease-in-out;
             }
           }
         }
@@ -208,8 +213,54 @@ textarea:focus {
   }
 }
 
-/* ======= Hero && Partner Section ======= */
-#hero-section,
-#partner-section {
-  padding: 50px 0;
+/* ======= Services Section ======= */
+#services-section {
+  nav {
+    .nav-tabs {
+      button {
+        color: #21243d;
+        box-shadow: 0px 10px 16px #0000000d;
+        border-radius: 14px;
+        background-color: #ffffff;
+        margin: 0 15px;
+        padding: 10px 15px !important;
+        text-align: left !important;
+        font-family: $p-bold;
+        transition: 0s !important;
+        &.active {
+          background: transparent
+            linear-gradient(249deg, #a37fdb 0%, #2eb2ed 100%) 0% 0% no-repeat
+            padding-box;
+          color: #ffffff;
+          position: relative;
+          img {
+            filter: brightness(0) invert(1);
+            -webkit-filter: brightness(0) invert(1);
+          }
+          &::after {
+            position: absolute;
+            content: '';
+            width: 80%;
+            margin: auto;
+            height: 15px;
+            bottom: -2px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: transparent
+              linear-gradient(116deg, #a37fdb 0%, #2eb2ed 100%) 0% 0% no-repeat
+              padding-box;
+            filter: blur(10px);
+            transition: all 0.5s linear;
+            border-radius: 23px;
+            -webkit-border-radius: 23px;
+            -moz-border-radius: 23px;
+            -ms-border-radius: 23px;
+            -o-border-radius: 23px;
+            z-index: -1;
+            -webkit-filter: blur(10px);
+          }
+        }
+      }
+    }
+  }
 }
