@@ -1,5 +1,6 @@
 //  Partner Slider
 var swiper = new Swiper('.swiper-container.partner-slider', {
+    autoplay: true,
     slidesPerView: 6,
     spaceBetween: 30,
     grabCursor: true,
