@@ -448,3 +448,19 @@ textarea:focus {
     }
   }
 }
+
+/* ====== Back to Top ====== */
+#back-to-top {
+  transform: scale(0);
+  opacity: 0;
+  position: fixed;
+  right: 30px;
+  bottom: 20px;
+  border: 0;
+  background-color: #42a9ea;
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 3px;
+  transition: all 0.3s linear;
+  z-index: 9999999999999999;
+}
