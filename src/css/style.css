@@ -281,7 +281,7 @@ textarea:focus {
 
 /* ======= Intro Section ======= */
 #testimonial-section {
-  padding: 50px 0;
+  padding: 100px 0 200px 0;
 }
 
 #testimonial-section .section-title .heading {
@@ -358,5 +358,109 @@ textarea:focus {
 
 #testimonial-section .swiper-navigation button.swiper-button-disabled {
   opacity: 0.6;
+}
+
+/* ======= Newsletter Section ======= */
+#newsletter-section {
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+}
+
+#newsletter-section .bg {
+  background-color: #42a9ea;
+  padding: 50px;
+  border-radius: 30px;
+  background-image: url("../img/newsletter-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#newsletter-section .right-side form {
+  -webkit-box-shadow: 0px 3px 10px #00000017;
+          box-shadow: 0px 3px 10px #00000017;
+  border-radius: 72px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+#newsletter-section .right-side form input {
+  width: 350px;
+  max-width: 100%;
+}
+
+#newsletter-section .right-side form input:focus {
+  outline: none !important;
+}
+
+/* ======= Footer Section ======= */
+#footer-section {
+  background-color: #4b2e7a;
+  padding-top: 150px;
+}
+
+#footer-section .footer-widget .footer-logo {
+  font-size: 30px;
+  font-family: "poligon-bold";
+}
+
+#footer-section .footer-widget .after-footer-logo-text {
+  font-size: 18px;
+  color: #ffffffa9 !important;
+}
+
+#footer-section .footer-widget .social-links a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+#footer-section .footer-widget .social-links a:first-child {
+  margin-left: 0;
+}
+
+#footer-section .footer-widget .social-links a:last-child {
+  margin-right: 0;
+}
+
+#footer-section .footer-widget .social-links a i {
+  font-size: 17px;
+  color: #ffffff;
+}
+
+#footer-section .footer-widget .footer-sub-heading {
+  font-size: 18px;
+  color: #ffffff;
+  font-family: "poligon-bold";
+  min-height: 60px;
+}
+
+#footer-section .footer-widget .footer-link p {
+  color: #ffffffa9;
+  font-size: 18px;
+}
+
+#footer-section .footer-widget .footer-link p i {
+  color: #ffffff !important;
+}
+
+#footer-section .footer-widget .footer-link p a {
+  font-size: 18px;
+  color: #ffffffa9;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+  width: 100%;
+}
+
+#footer-section .footer-widget .footer-link p a:hover {
+  text-decoration: underline;
+}
+
+#footer-section .footer-copyright p {
+  color: #ffffffa9;
+  font-size: 18px;
 }
 /*# sourceMappingURL=style.css.map */

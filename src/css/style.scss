@@ -279,7 +279,7 @@ textarea:focus {
 
 /* ======= Intro Section ======= */
 #testimonial-section {
-  padding: $section-padding;
+  padding: 100px 0 200px 0;
   .section-title {
     .heading {
       color: #364a6b;
@@ -345,6 +345,100 @@ textarea:focus {
       &.swiper-button-disabled {
         opacity: 0.6;
       }
+    }
+  }
+}
+
+/* ======= Newsletter Section ======= */
+#newsletter-section {
+  position: absolute;
+  transform: translateY(-50%);
+  width: 100%;
+  .bg {
+    background-color: #42a9ea;
+    padding: 50px;
+    border-radius: 30px;
+    background-image: url('../img/newsletter-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .right-side {
+    form {
+      box-shadow: 0px 3px 10px #00000017;
+      border-radius: 72px;
+      max-width: 100%;
+      overflow: hidden;
+      input {
+        width: 350px;
+        max-width: 100%;
+        &:focus {
+          outline: none !important;
+        }
+      }
+    }
+  }
+}
+
+/* ======= Footer Section ======= */
+#footer-section {
+  background-color: #4b2e7a;
+  padding-top: 150px;
+  .footer-widget {
+    .footer-logo {
+      font-size: $logo-size;
+      font-family: $p-bold;
+    }
+    .after-footer-logo-text {
+      font-size: $para-size;
+      color: #ffffffa9 !important;
+    }
+    .social-links a {
+      margin: 0 10px;
+      display: inline-block;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+      i {
+        font-size: 17px;
+        color: #ffffff;
+      }
+    }
+    .footer-sub-heading {
+      font-size: $para-size;
+      color: #ffffff;
+      font-family: $p-bold;
+      min-height: 60px;
+    }
+    .footer-link {
+      p {
+        color: #ffffffa9;
+        font-size: $para-size;
+        i {
+          color: #ffffff !important;
+        }
+        a {
+          font-size: $para-size;
+          color: #ffffffa9;
+          white-space: pre-wrap;
+          white-space: -moz-pre-wrap;
+          white-space: -o-pre-wrap;
+          word-wrap: break-word;
+          width: 100%;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  .footer-copyright {
+    p {
+      color: #ffffffa9;
+      font-size: $para-size;
     }
   }
 }
