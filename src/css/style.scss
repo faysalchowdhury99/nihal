@@ -1,0 +1,199 @@
+// Variables
+// Fonts
+$p-bold: 'poligon-bold';
+$p-regular: 'poligon-regular';
+
+// Text Size
+$big-heading: 50px;
+$heading: 40px;
+$para-size: 18px;
+$big-para-size: 22px;
+$button-size: 18px;
+$logo-size: 30px;
+
+// Padding
+$section-padding: 100px 0;
+
+/* ======= Basic ======= */
+body {
+  font-family: 'poligon-regular';
+}
+a {
+  text-decoration: none;
+}
+button:focus,
+textarea:focus {
+  outline: none !important;
+}
+/* ======= Fonts ======= */
+@font-face {
+  font-family: 'poligon-regular';
+  src: url('../fonts/Poligon-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.poligon-regular {
+  font-family: $p-regular;
+}
+@font-face {
+  font-family: 'poligon-bold';
+  src: url('../fonts/Poligon-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+.poligon-bold {
+  font-family: $p-bold;
+}
+/* ======= Reuseable ======= */
+.heading {
+  font-size: $heading;
+  font-family: $p-bold;
+}
+.para-text {
+  font-size: $para-size;
+}
+.button {
+  font-size: $button-size;
+  padding: 10px 30px;
+  border-radius: 23px;
+  &.button-gradient {
+    background: transparent linear-gradient(116deg, #a37fdb 0%, #2eb2ed 100%) 0%
+      0% no-repeat padding-box;
+    color: #ffffff;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: '';
+      width: 80%;
+      margin: auto;
+      height: 15px;
+      bottom: -2px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: transparent linear-gradient(116deg, #a37fdb 0%, #2eb2ed 100%)
+        0% 0% no-repeat padding-box;
+      filter: blur(10px);
+      transition: all 0.5s linear;
+      border-radius: 23px;
+      -webkit-border-radius: 23px;
+      -moz-border-radius: 23px;
+      -ms-border-radius: 23px;
+      -o-border-radius: 23px;
+      z-index: -1;
+      -webkit-filter: blur(10px);
+    }
+    &:hover::after {
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+    }
+  }
+}
+
+/* ======= Header Section ======= */
+#header-section {
+  // Top bars
+  .top-bar {
+    background-color: #a37fdb;
+    .news {
+      .news-logo {
+        background: #aa51ff 0% 0% no-repeat padding-box;
+        border-radius: 10px;
+        padding: 5px 12px;
+        color: #ffffff;
+      }
+    }
+    .social-links {
+      a {
+        display: inline-block;
+        margin: 0 10px;
+        &:first-child {
+          margin-left: 0;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+        i {
+          color: #a37fdb;
+          background-color: #ffffff;
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
+          text-align: center;
+          border-radius: 50%;
+          transition: all 0.3s linear;
+          &:hover {
+            color: #ffffff;
+            background-color: #aa51ff;
+            transition: all 0.3s linear;
+          }
+        }
+      }
+    }
+  }
+  //   Navbar
+  .navbar {
+    .navbar-toggler {
+      &:focus {
+        box-shadow: none !important;
+      }
+    }
+    .navbar-brand {
+      color: #a37fdb;
+      font-family: $p-bold;
+      font-size: $logo-size;
+    }
+    .navbar-nav {
+      .nav-item {
+        margin: 0 10px;
+        &:first-child {
+          margin-left: 0;
+        }
+        .nav-link {
+          color: #000000;
+          position: relative;
+          &::after {
+            position: absolute;
+            content: '';
+            bottom: 2px;
+            left: 50%;
+            transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            height: 4px;
+            width: 0;
+            background-color: #a37fdb;
+            border-radius: 102px;
+          }
+          &.active {
+            color: #a37fdb;
+            font-family: $p-bold;
+            &::after {
+              width: 12px;
+              transition: all 0.3s ease-in-out;
+              -webkit-transition: all 0.3s ease-in-out;
+              -moz-transition: all 0.3s ease-in-out;
+              -ms-transition: all 0.3s ease-in-out;
+              -o-transition: all 0.3s ease-in-out;
+            }
+          }
+        }
+      }
+    }
+    .navbar-button {
+      a {
+        margin: 0 10px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

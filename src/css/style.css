@@ -1,1 +1,199 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+/* ======= Basic ======= */
+body {
+  font-family: 'poligon-regular';
+}
+
+a {
+  text-decoration: none;
+}
+
+button:focus,
+textarea:focus {
+  outline: none !important;
+}
+
+/* ======= Fonts ======= */
+@font-face {
+  font-family: 'poligon-regular';
+  src: url("../fonts/Poligon-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.poligon-regular {
+  font-family: "poligon-regular";
+}
+
+@font-face {
+  font-family: 'poligon-bold';
+  src: url("../fonts/Poligon-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+.poligon-bold {
+  font-family: "poligon-bold";
+}
+
+/* ======= Reuseable ======= */
+.heading {
+  font-size: 40px;
+  font-family: "poligon-bold";
+}
+
+.para-text {
+  font-size: 18px;
+}
+
+.button {
+  font-size: 18px;
+  padding: 10px 30px;
+  border-radius: 23px;
+}
+
+.button.button-gradient {
+  background: transparent linear-gradient(116deg, #a37fdb 0%, #2eb2ed 100%) 0% 0% no-repeat padding-box;
+  color: #ffffff;
+  position: relative;
+}
+
+.button.button-gradient::after {
+  position: absolute;
+  content: '';
+  width: 80%;
+  margin: auto;
+  height: 15px;
+  bottom: -2px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: transparent linear-gradient(116deg, #a37fdb 0%, #2eb2ed 100%) 0% 0% no-repeat padding-box;
+  filter: blur(10px);
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  border-radius: 23px;
+  -webkit-border-radius: 23px;
+  -moz-border-radius: 23px;
+  -ms-border-radius: 23px;
+  -o-border-radius: 23px;
+  z-index: -1;
+  -webkit-filter: blur(10px);
+}
+
+.button.button-gradient:hover::after {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+/* ======= Header Section ======= */
+#header-section .top-bar {
+  background-color: #a37fdb;
+}
+
+#header-section .top-bar .news .news-logo {
+  background: #aa51ff 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  padding: 5px 12px;
+  color: #ffffff;
+}
+
+#header-section .top-bar .social-links a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+#header-section .top-bar .social-links a:first-child {
+  margin-left: 0;
+}
+
+#header-section .top-bar .social-links a:last-child {
+  margin-right: 0;
+}
+
+#header-section .top-bar .social-links a i {
+  color: #a37fdb;
+  background-color: #ffffff;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+#header-section .top-bar .social-links a i:hover {
+  color: #ffffff;
+  background-color: #aa51ff;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+#header-section .navbar .navbar-toggler:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+#header-section .navbar .navbar-brand {
+  color: #a37fdb;
+  font-family: "poligon-bold";
+  font-size: 30px;
+}
+
+#header-section .navbar .navbar-nav .nav-item {
+  margin: 0 10px;
+}
+
+#header-section .navbar .navbar-nav .nav-item:first-child {
+  margin-left: 0;
+}
+
+#header-section .navbar .navbar-nav .nav-item .nav-link {
+  color: #000000;
+  position: relative;
+}
+
+#header-section .navbar .navbar-nav .nav-item .nav-link::after {
+  position: absolute;
+  content: '';
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  height: 4px;
+  width: 0;
+  background-color: #a37fdb;
+  border-radius: 102px;
+}
+
+#header-section .navbar .navbar-nav .nav-item .nav-link.active {
+  color: #a37fdb;
+  font-family: "poligon-bold";
+}
+
+#header-section .navbar .navbar-nav .nav-item .nav-link.active::after {
+  width: 12px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+#header-section .navbar .navbar-button a {
+  margin: 0 10px;
+}
+
+#header-section .navbar .navbar-button a:last-child {
+  margin-right: 0;
+}
+/*# sourceMappingURL=style.css.map */
