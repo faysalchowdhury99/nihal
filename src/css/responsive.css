@@ -39,6 +39,13 @@
     -webkit-filter: invert(0%) sepia(6%) saturate(7475%) hue-rotate(285deg) brightness(103%) contrast(106%);
             filter: invert(0%) sepia(6%) saturate(7475%) hue-rotate(285deg) brightness(103%) contrast(106%);
   }
+  #testimonial-section .swiper-slide {
+    background-color: #ffffff;
+  }
+  #testimonial-section .swiper-slide .testimonial-box {
+    width: 90% !important;
+    padding: 20px;
+  }
 }
 
 @media only screen and (max-width: 575px) {
