@@ -1,3 +1,17 @@
+// Mobile Menu
+const showMenu = document.querySelector('.navbar-toggler');
+const hideMenu = document.querySelector('.hide-menu');
+showMenu.addEventListener('click', () => {
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    navbarCollapse.classList.add('show-menu');
+    navbarCollapse.classList.remove('hide-menu');
+});
+hideMenu.addEventListener('click', () => {
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    navbarCollapse.classList.add('hide-menu');
+    navbarCollapse.classList.remove('show-menu');
+});
+
 //  Partner Slider
 var swiper = new Swiper('.swiper-container.partner-slider', {
     autoplay: true,

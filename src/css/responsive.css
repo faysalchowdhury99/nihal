@@ -1,4 +1,59 @@
 @media only screen and (max-width: 991px) {
+  /* =========  Header Section ========= */
+  #header-section .navbar-toggler {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50% !important;
+    padding: 0 !important;
+    background-color: #a37fdb;
+  }
+  #header-section .navbar-toggler .fa-bars {
+    color: #ffffff;
+  }
+  #header-section .navbar .collapse {
+    display: none !important;
+    overflow: hidden;
+    background-color: #ffffff;
+    z-index: 9999999999999999999999 !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px 30px !important;
+    -webkit-transform: 0.5s;
+            transform: 0.5s;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  #header-section .navbar .collapse .hide-menu {
+    width: 30px;
+    height: 30px;
+    line-height: 31px;
+    text-align: center;
+    border-radius: 50% !important;
+    padding: 0 !important;
+  }
+  #header-section .navbar .collapse .navbar-nav {
+    margin-top: 30px !important;
+  }
+  #header-section .navbar .collapse .navbar-nav .nav-item {
+    margin: 0 10px;
+  }
+  #header-section .navbar .collapse .navbar-nav .nav-item .nav-link::after {
+    height: 0;
+  }
+  #header-section .navbar .collapse .navbar-button .button {
+    margin-top: 10px;
+  }
+  #header-section .navbar .collapse.show-menu {
+    display: block !important;
+  }
+  #header-section .navbar .collapse.hide-menu {
+    display: none !important;
+  }
   /* =========  Services Section ========= */
   #services-section nav .nav-tabs {
     padding: 15px 0 !important;

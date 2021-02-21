@@ -487,6 +487,6 @@ textarea:focus {
   border-radius: 3px;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
-  z-index: 9999999999999999;
+  z-index: 999999999;
 }
 /*# sourceMappingURL=style.css.map */
