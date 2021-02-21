@@ -91,10 +91,8 @@ window.onscroll = function () {
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         backToTopBtn.style.opacity = '1';
-        backToTopBtn.style.transform = 'scale(1)';
     } else {
         backToTopBtn.style.opacity = '0';
-        backToTopBtn.style.transform = 'scale(0)';
     }
 }
 backToTopBtn.addEventListener('click', () => {
