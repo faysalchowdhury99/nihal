@@ -164,3 +164,71 @@
     padding-top: 50px;
   }
 }
+
+/* ======= Responsive For 1600px+ Device ======= */
+@media only screen and (min-width: 1600px) {
+  /* =========  Reuseable ========= */
+  .after-heading {
+    font-size: 30px;
+  }
+  .big-heading {
+    font-size: 60px;
+  }
+  .heading {
+    font-size: 50px;
+  }
+  .para-text {
+    font-size: 22px;
+  }
+  .button {
+    font-size: 20px;
+  }
+  /* =========  Header Section ========= */
+  #header-section {
+    .navbar {
+      .navbar-brand {
+        font-size: 40px;
+      }
+      .nav-item {
+        .nav-link {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  /* ======= Testimonial Section ======= */
+  #testimonial-section {
+    .testimonial-box {
+      .client-info {
+        .name {
+          font-size: 22px;
+        }
+        .profession-and-city {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  /* =========  Newsletter Section ========= */
+  #newsletter-section {
+    .bg {
+      padding: 70px;
+      border-radius: 35px;
+    }
+    .right-side {
+      form {
+        input {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  /* ======= Footer Section ======= */
+  #footer-section {
+    .footer-widget {
+      .footer-logo {
+        font-size: 40px;
+      }
+    }
+  }
+}
