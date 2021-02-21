@@ -1,16 +1,14 @@
 @media only screen and (max-width: 991px) {
   /* =========  Header Section ========= */
-  #header-section .navbar-toggler {
+  #header-section .navbar-toggler .fa-bars {
+    color: #21243d;
+    background-color: #f9f9f9;
     width: 40px;
     height: 40px;
     line-height: 40px;
     text-align: center;
     border-radius: 50% !important;
     padding: 0 !important;
-    background-color: #a37fdb;
-  }
-  #header-section .navbar-toggler .fa-bars {
-    color: #ffffff;
   }
   #header-section .navbar .collapse {
     display: none !important;
@@ -22,15 +20,28 @@
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 20px 30px !important;
   }
-  #header-section .navbar .collapse .hide-menu {
-    width: 30px;
-    height: 30px;
-    line-height: 31px;
-    text-align: center;
-    border-radius: 50% !important;
-    padding: 0 !important;
+  #header-section .navbar .collapse.show-menu {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #header-section .navbar .collapse.hide-menu {
+    display: none !important;
+  }
+  #header-section .navbar .collapse .hide-menu-btn-box {
+    right: 20px;
+    top: 20px;
   }
   #header-section .navbar .collapse .navbar-nav {
     margin-top: 30px !important;
@@ -42,13 +53,8 @@
     height: 0;
   }
   #header-section .navbar .collapse .navbar-button .button {
-    margin-top: 10px;
-  }
-  #header-section .navbar .collapse.show-menu {
-    display: block !important;
-  }
-  #header-section .navbar .collapse.hide-menu {
-    display: none !important;
+    margin: 0;
+    margin-top: 5px;
   }
   /* =========  Services Section ========= */
   #services-section nav .nav-tabs {

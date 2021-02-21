@@ -2,15 +2,15 @@
   /* =========  Header Section ========= */
   #header-section {
     .navbar-toggler {
-      width: 40px;
-      height: 40px;
-      line-height: 40px;
-      text-align: center;
-      border-radius: 50% !important;
-      padding: 0 !important;
-      background-color: #a37fdb;
       .fa-bars {
-        color: #ffffff;
+        color: #21243d;
+        background-color: #f9f9f9;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 50% !important;
+        padding: 0 !important;
       }
     }
     .navbar {
@@ -24,14 +24,18 @@
         left: 0;
         width: 100%;
         height: 100%;
-        padding: 20px 30px !important;
-        .hide-menu {
-          width: 30px;
-          height: 30px;
-          line-height: 31px;
-          text-align: center;
-          border-radius: 50% !important;
-          padding: 0 !important;
+        &.show-menu {
+          display: flex !important;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        &.hide-menu {
+          display: none !important;
+        }
+        .hide-menu-btn-box {
+          right: 20px;
+          top: 20px;
         }
         .navbar-nav {
           margin-top: 30px !important;
@@ -46,14 +50,9 @@
         }
         .navbar-button {
           .button {
-            margin-top: 10px;
+            margin: 0;
+            margin-top: 5px;
           }
-        }
-        &.show-menu {
-          display: block !important;
-        }
-        &.hide-menu {
-          display: none !important;
         }
       }
     }

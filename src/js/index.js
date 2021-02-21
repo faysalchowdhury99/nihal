@@ -1,12 +1,12 @@
 // Mobile Menu
-const showMenu = document.querySelector('.navbar-toggler');
-const hideMenu = document.querySelector('.hide-menu');
-showMenu.addEventListener('click', () => {
+const showMenuBtn = document.querySelector('.show-menu-btn');
+const hideMenuBtn = document.querySelector('.hide-menu-btn');
+showMenuBtn.addEventListener('click', () => {
     const navbarCollapse = document.querySelector('.navbar-collapse');
     navbarCollapse.classList.add('show-menu');
     navbarCollapse.classList.remove('hide-menu');
 });
-hideMenu.addEventListener('click', () => {
+hideMenuBtn.addEventListener('click', () => {
     const navbarCollapse = document.querySelector('.navbar-collapse');
     navbarCollapse.classList.add('hide-menu');
     navbarCollapse.classList.remove('show-menu');
